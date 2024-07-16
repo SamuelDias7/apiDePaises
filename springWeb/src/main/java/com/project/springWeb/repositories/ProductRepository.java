@@ -7,4 +7,6 @@ public interface ProductRepository extends CrudRepository<ProductModel, Integer>
 
     ProductModel findByid(int id);
 
+    Iterable<ProductModel> findBycontinente(String continente);
+
 }

@@ -27,6 +27,11 @@ public class ProductController {
         return acao.findByid(id);
     }
 
+    @GetMapping("/selecionar/{continente}")
+    public Iterable<ProductModel> selecionarPeloContinente(@PathVariable String continente){
+        return acao.findBycontinente(continente);
+    }
+
     @PostMapping("/api")
     public ProductModel cadastrar(@RequestBody ProductModel dado){
         return acao.save(dado);
