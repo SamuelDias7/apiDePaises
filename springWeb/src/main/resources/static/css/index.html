@@ -4,62 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaisesApi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="script.js"></script>
 </head>
 <body>
 
-    <header>
-            <div class="container-navbar">
+<header>
+    <div class="container-navbar">
 
-                <a href="#">
-                    <img src="img/mundo.png" class="img-navbar" alt="Logo do site, o planeta terra">
-                </a>
+        <a href="">
+            <img src="img/mundo.png" class="img-navbar" alt="Logo do site, o planeta terra">
+        </a>
 
-                <div class="separador"></div>
+        <div class="separador"></div>
 
-                <div class="container-botoes">
+        <div class="container-botoes">
 
-                    <nav>
-                        <ul class="botoes">
-                            <a href="#">
-                                <li>Europa</li>
-                            </a>
+            <nav>
+                <ul class="botoes">
+                    <a href="http://localhost:8080/selecionar/Europa">
+                        <li class="continentes-classe">Europa</li>
+                    </a>
 
-                            <a href="#">
-                                <li>Americas</li>
-                            </a>
+                    <a href="http://localhost:8080/selecionar/America">
+                        <li class="continentes-classe">Americas</li>
+                    </a>
 
-                            <a href="#">
-                                <li>África</li>
-                            </a>
+                    <a href="http://localhost:8080/selecionar/%C3%81frica">
+                        <li class="continentes-classe">África</li>
+                    </a>
 
-                            <a href="#">
-                                <li>Ásia</li>
-                            </a>
+                    <a href="http://localhost:8080/selecionar/%C3%81sia">
+                        <li class="continentes-classe">Ásia</li>
+                    </a>
 
-                            <a href="#">
-                                <li>Oceania</li>
-                            </a>
-                        </ul>
+                    <a href="http://localhost:8080/selecionar/Oceania">
+                        <li class="continentes-classe">Oceania</li>
+                    </a>
+                </ul>
 
-                    </nav>
+            </nav>
 
-                </div>
+        </div>
 
-                <div class="separador-segundo" ></div>
+        <div class="separador-segundo" ></div>
 
-                <div class="container-pesquisar">
-                    <input type="text" class="pesquisar" placeholder="Qual pais preocura?">
+        <div class="container-pesquisar">
+            <input type="text" class="pesquisar" id="Input-pesquisar" placeholder="Qual pais preocura?">
+            <a onclick="pegarDado()" href="#">
+                <img src="img/search.png" alt="Icone de um lupa de pesquisar" class="bota-de-pesquisar">
+            </a>
 
-                </div>
-            </div>
-    </header>
+        </div>
+    </div>
+</header>
 
-    <main>
-        <div class="container-de-paises" id="container-de-paises-primeira-linha">
+<main>
+    <div class="container-de-paises" id="container-de-paises-primeira-linha">
 
-         <a href="http://localhost:8080/exibir/1">
+        <a href="http://localhost:8080/exibir/1">
             <div class="pais" id="container-pais1">
             </div>
         </a>
@@ -82,17 +85,17 @@
             </div>
         </a>
 
-            
-        </div>
 
-        <div class="container-de-paises" id="container-de-paises-segunda-linha">
-            
-        <a href="http://localhost:8080/exibir/5">    
+    </div>
+
+    <div class="container-de-paises" id="container-de-paises-segunda-linha">
+
+        <a href="http://localhost:8080/exibir/5">
             <div class="pais" id="container-pais5">
             </div>
         </a>
 
-        <a href="http://localhost:8080/exibir/6">    
+        <a href="http://localhost:8080/exibir/6">
 
             <div class="pais" id="container-pais6">
 
@@ -100,7 +103,7 @@
 
         </a>
 
-        <a href="http://localhost:8080/exibir/7">    
+        <a href="http://localhost:8080/exibir/7">
 
             <div class="pais" id="container-pais7">
 
@@ -108,15 +111,43 @@
 
         </a>
 
-        <a href="http://localhost:8080/exibir/8">    
+        <a href="http://localhost:8080/exibir/8">
 
             <div class="pais" id="container-pais8">
 
             </div>
         </a>
 
-        </div>
+    </div>
 
-    </main>
+</main>
+
+<footer>
+
+    <div class="container-texto-de-redes">
+        <p class="titulos-das-redes">Redes Sociais:</p>
+    </div>
+
+
+    <div class="container-contatos">
+        <a href="https://github.com/SamuelDias7" target="_blank">
+            <img src="img/github.png" alt="icone do github" id="github" class="contatos">
+        </a>
+
+        <a href="https://www.instagram.com/sam.dias2/" target="_blank">
+            <img src="img/instagram.png" alt="Icone do instagram" id="instagram" class="contatos">
+        </a>
+
+        <a href="https://www.linkedin.com/in/samuel-dias-dev/" target="_blank">
+            <img src="img/linkedin.png" alt="Icone do linkedin" id="gmail" class="contatos">
+        </a>
+    </div>
+
+    <div class="container-email">
+        <img src="img/gmail.png" alt="Icone do email" class="gmail">
+        <p class="titulo-email">dias7.sam@gmail.com</p>
+    </div>
+
+</footer>
 </body>
 </html>
