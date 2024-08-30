@@ -14,6 +14,21 @@
 .container-botoes{
     display: flex;
     align-items: flex-end;
+    border-radius: 50px;
+    align-items: center;
+}
+
+
+#paisesc{
+    border-radius: 30px;
+}
+
+
+div{
+}
+
+div{
+
 }
 
 .separador{
@@ -91,6 +106,7 @@ a{
     width: 300px;
     margin: 10px;
     border: 2px solid black;
+    border-radius: 50px;
 }
 
 #pais-ultimo{
@@ -185,3 +201,97 @@ footer{
     height: 20px;
     width: 20px;
 }
+
+ul{
+    border-radius: 60px;
+}
+
+div{
+}
+
+#testando{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+
+#ç1{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+.continentes{
+    background-color: gray;
+    height: 50px;   
+    width: 100px;
+    
+    border-radius: 10px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*America*/
+#America:hover{
+    background-color: red;
+}
+
+#America:hover .link-continentes{
+    color: white;
+}
+
+/*Europa*/
+#Europa:hover{
+    background-color: blue;
+}
+
+#Europa:hover .link-continentes{
+    color: white;
+}
+
+/*Asia*/
+#Asia:hover{
+    background-color: #797906;
+}
+
+#Asia:hover .link-continentes{
+    color: white;
+}
+
+/*Africa*/
+#Africa:hover{
+    background-color: black;
+}
+
+#Africa:hover .link-continentes{
+    color: white;
+}
+
+
+
+/*Oceania*/
+
+#oceania:hover{
+    background-color: green;
+}
+
+#oceania:hover .link-continentes{
+    color: white;
+}
+
+
+
+
+data.pais:hover{
+    background-color: yellow;
+}
+
+#meu-id:hover{
+    color: white;
+}
+
+

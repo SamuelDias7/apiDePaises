@@ -11,6 +11,9 @@ function metodo(numero, container){
 
                 var NovoParagrafo = document.createElement("h1");
                 NovoParagrafo.textContent = data.pais;
+                
+                NovoParagrafo.id = "meu-id";
+
 
                 var Capital = document.createElement("p");
                 Capital.textContent = "capital: "+ data.capital;
@@ -89,6 +92,7 @@ function gerarNumero(){
 
 
 //Otimizar isto aqui, pois essa falta de organização esta atrapalhando a resolução de bugs
+
 gerarNumero();
 metodo(array_name[0],1);
 gerarNumero();
@@ -109,14 +113,12 @@ gerarNumero();
 metodo(array_name[8],8);
 gerarNumero();
 
+
 function pegarDado(){
     let campo = document.getElementById("Input-pesquisar").value
     alert(campo)
 
     let limpar = document.getElementById("Input-pesquisar").value = "";
-
-
-
     /*
     window.location.href = "http://localhost:8080/exibir/4";
 
